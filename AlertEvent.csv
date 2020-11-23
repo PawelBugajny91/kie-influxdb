@@ -1,0 +1,8 @@
+AlertEvent,status=partial_predicted_blinding,type=null duration=0 1546415534999
+AlertEvent,status=partial_predicted_blinding,type=start duration=2820000 1546415535000
+AlertEvent,status=partial_predicted_blinding,type=end duration=0 1546418355000
+AlertEvent,status=partial_predicted_blinding,type=null duration=0 1546418355001
+AlertEvent,status=partial_predicted_blinding,type=null value=0i 1546415534999
+AlertEvent,status=partial_predicted_blinding,type=start value=1i 1546415535000
+AlertEvent,status=partial_predicted_blinding,type=end value=1i  1546418355000
+AlertEvent,status=partial_predicted_blinding,type=null value=0i 1546418355001

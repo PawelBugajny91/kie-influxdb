@@ -1,0 +1,13 @@
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100  166k    0  166k  100    74  20.9M   9533 --:--:-- --:--:-- --:--:-- 23.2M
+{
+  "type" : "SUCCESS",
+  "msg" : "Container Cep_1_1.0.0-SNAPSHOT successfully called.",
+  "result" : {
+    "execution-results" : {
+      "results" : [ ],
+      "facts" : [ ]
+    }
+  }
+}

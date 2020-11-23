@@ -1,0 +1,11 @@
+#datatype,string,long,dateTime:RFC3339,dateTime:RFC3339,dateTime:RFC3339,double,string,string,string,string
+#group,false,false,true,true,false,false,true,true,true,true
+#default,_result,,,,,,,,,
+,result,table,_start,_stop,_time,_value,_field,_measurement,id,object
+,,0,2019-01-02T00:00:00Z,2019-01-03T00:00:00Z,2019-01-02T00:05:48Z,395,duration,sci,S1BS,Mars
+,,0,2019-01-02T00:00:00Z,2019-01-03T00:00:00Z,2019-01-02T07:57:15Z,407,duration,sci,S1BS,Mars
+,,0,2019-01-02T00:00:00Z,2019-01-03T00:00:00Z,2019-01-02T11:52:54Z,403,duration,sci,S1BS,Mars
+,,0,2019-01-02T00:00:00Z,2019-01-03T00:00:00Z,2019-01-02T15:48:43Z,403,duration,sci,S1BS,Mars
+,,0,2019-01-02T00:00:00Z,2019-01-03T00:00:00Z,2019-01-02T19:44:25Z,407,duration,sci,S1BS,Mars
+,,0,2019-01-02T00:00:00Z,2019-01-03T00:00:00Z,2019-01-02T23:40:04Z,409,duration,sci,S1BS,Mars
+

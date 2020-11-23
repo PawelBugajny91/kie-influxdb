@@ -1,0 +1,53 @@
+{
+  "type" : "SUCCESS",
+  "msg" : "Container Cep_1_1.0.0-SNAPSHOT successfully called.",
+  "result" : {
+    "execution-results" : {
+      "results" : [ {
+        "value" : [{"com.myspace.cep_1.FDEvent":{
+  "id" : null,
+  "duration" : 403000,
+  "time" : 1546444123000,
+  "status" : null
+}},{"com.myspace.cep_1.FDEvent":{
+  "id" : null,
+  "duration" : 407000,
+  "time" : 1546415835000,
+  "status" : null
+}},{"com.myspace.cep_1.FDEvent":{
+  "id" : null,
+  "duration" : 409000,
+  "time" : 1546472404000,
+  "status" : null
+}},{"com.myspace.cep_1.FDEvent":{
+  "id" : null,
+  "duration" : 407000,
+  "time" : 1546458265000,
+  "status" : null
+}},{"com.myspace.cep_1.FDEvent":{
+  "id" : null,
+  "duration" : 403000,
+  "time" : 1546429974000,
+  "status" : null
+}},{"com.myspace.cep_1.FDEvent":{
+  "id" : null,
+  "duration" : 395000,
+  "time" : 1546387548000,
+  "status" : null
+}},{"com.myspace.cep_1.BlindingEvent":{
+  "id" : null,
+  "duration" : 2820000,
+  "time" : 1546415535000,
+  "status" : null
+}},{"com.myspace.cep_1.AlertEvent":{
+  "id" : null,
+  "duration" : 2820000,
+  "time" : 1546415535000,
+  "status" : "partial_predicted_blinding"
+}}],
+        "key" : "sci"
+      } ],
+      "facts" : [ ]
+    }
+  }
+}

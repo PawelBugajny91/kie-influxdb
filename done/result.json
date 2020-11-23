@@ -1,0 +1,16 @@
+{
+    "commands" : [
+        {
+            "insert" : {
+                "object": {
+
+"BlindingEvent" : {"time" : 1546415535000, "duration" : 2820000 }
+                }
+            }  
+        },
+        {
+			
+			"fire-all-rules":{}
+		}
+        ]
+}

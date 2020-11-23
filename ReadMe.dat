@@ -1,0 +1,14 @@
+csvToJeson file_in(csv) file_out(json)
+jsonToCsv file_in(json) file_out(csv) EventToSelectFromInFiles
+
+getDataAres.sh parameterNameFromInfluxDB(and file_out) timePeriod
+getDataFD.sh parameterNameFromInfluxDB(and file_out) timePeriod
+getDataEvent.sh eventNameFromInfluxDB(and file_out) timePeriod
+
+menager.sh ares/fd(source) parameterNameFromInfluxDB(and file_out) GeneretedEvent InfluxdbName
+
+putDataKie.sh file_in where_to(ProjectNameKie-server)
+
+writeData.sh InfludbName EventSelected
+
+GoEvents.sh EventSelected EventCreated

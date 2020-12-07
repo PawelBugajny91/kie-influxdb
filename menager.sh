@@ -1,5 +1,5 @@
 #! /bin/bash
-time="start: 2019-01-02T00:00:00Z, stop: 2019-01-03T00:00:00Z"
+time="start: 2020-06-01T00:00:00Z, stop: 2020-11-27T12:00:00Z"
 if [ "$1" = "ares" -o "$1" = "Ares" ] ; then
 ./getDataAres.sh $2 $time
 elif [ "$1" = "fd" -o "$1" = "Fd" ] ; then
@@ -8,7 +8,7 @@ else
 echo "unsuported"
 fi
 echo "Get data done"
-./csvToJson.out $2.csv $2.json 
+./csvToJson.out $2.csv $2.json $2
 echo "scv to json done"
 ./putDataKie.sh $2.json CreateBasicEvents 2> logs.dat
 echo "put data done"

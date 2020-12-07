@@ -1,9 +1,9 @@
 #! /bin/bash
 
-./menager.sh fd sci FDEvent
-./GoEvents.sh FDEvent
+#./menager.sh fd sci FDEvent
+#./GoEvents.sh FDEvent
 
-./menager.sh ares ASA1321L BlindingEvent
+#./menager.sh ares ASA1321L BlindingEvent
 ./GoEvents.sh BlindingEvent
 echo "Go Alert"
 ./getDataKie.sh Cep_1

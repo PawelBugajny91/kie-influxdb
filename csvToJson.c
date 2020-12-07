@@ -106,11 +106,10 @@ int readType(int fd)
     return type;
 }
 // Writes JSON data based on CSV file
-int JsonWriteFromCSV(int csv_fd, int json_fd, int type)
+int JsonWriteFromCSV(int csv_fd, int json_fd, char* FieldMesurmend,  int type)
 {
 int R = 0;
 char FieldTag[256];
-char FieldMesurmend[256];
 char FieldName[256];
 char FieldTime[256];
 char FieldValue[256];
@@ -123,27 +122,12 @@ time_t Time;
         R = ReadToken(csv_fd, Empty, '-');
         if (R == 0) R = ReadToken(csv_fd, Empty, ',');
         if (R == 0) R = ReadToken(csv_fd, Empty, ',');
-        // if (R == 0) R = ReadToken(csv_fd, Empty, ',');
-        // if (R == 0) R = ReadToken(csv_fd, Empty, ',');
 
         if (R == 0) R = ReadToken(csv_fd, FieldTime, ',');
         if (R == 0) R = ReadToken(csv_fd, FieldValue, ',');
         if (R == 0) R = ReadToken(csv_fd, FieldName, ',');
-        if(type==10)
-        {   
-            if (R == 0) R = ReadToken(csv_fd, FieldMesurmend, ',');
-            if (R == 0) R = ReadToken(csv_fd, Empty, ',');
-            if (R == 0) R = ReadToken(csv_fd, FieldTag, 10);
-        }
-        else if(type==9)
-        {
-            if (R == 0) R = ReadToken(csv_fd, FieldMesurmend, ',');
-            if (R == 0) R = ReadToken(csv_fd, FieldTag, 10);
-        }
-        else
-        { 
-            if (R == 0) R = ReadToken(csv_fd, FieldMesurmend, 10);
-        }
+        if (R == 0) R = ReadToken(csv_fd, Empty, 10);
+        
         if (R == 0)
         {
             Time = Timestamp2Time(FieldTime);
@@ -163,7 +147,7 @@ int main(int argc, char** argv)
 char *ParamInFile, *ParamOutFile, *ParamJSONPrefix, *ParamJSONSuffix, *ParamTimeZone;
 int R = 0;
 int fd_in, fd_out;
-
+char *FieldMesurmend;
     
     // Initialization
     if ((argc < 3) || (argc > 4))
@@ -178,7 +162,8 @@ int fd_in, fd_out;
 
     ParamInFile     = argv[1];
     ParamOutFile    = argv[2];
-    if (argc == 4) ParamTimeZone = argv[3]; else ParamTimeZone = NULL;
+    FieldMesurmend  = argv[3];
+    if (argc == 4) ParamTimeZone = argv[4]; else ParamTimeZone = NULL;
 
     // The main application process
     if (argc == 4)
@@ -199,9 +184,7 @@ int fd_in, fd_out;
             {
                 R = R || skipHeader(fd_in);
                 int type = readType(fd_in);
-                //JsonWriteDataHeader(fd_out, TokenNameObject);
-                JsonWriteFromCSV(fd_in, fd_out, type);
-                //JsonWriteDataFooter(fd_out);                
+                JsonWriteFromCSV(fd_in, fd_out, FieldMesurmend, type);               
             }
             else R = 1;
             

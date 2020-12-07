@@ -2,5 +2,6 @@
 #group,false,false,true,true,false,false,true,true,true,true
 #default,_result,,,,,,,,,
 ,result,table,_start,_stop,_time,_value,_field,_measurement,status,type
-,,0,2019-01-02T00:00:00Z,2019-01-03T00:00:00Z,2019-01-02T07:52:15Z,2820000,duration,BlindingEvent,validStar,start
+,,0,2020-06-01T00:00:00Z,2020-11-27T12:00:00Z,2020-11-27T10:00:00Z,138000,duration,BlindingEvent,QuaterionValidFlag,start
+,,0,2020-06-01T00:00:00Z,2020-11-27T12:00:00Z,2020-11-27T10:46:28Z,130000,duration,BlindingEvent,QuaterionValidFlag,start
 

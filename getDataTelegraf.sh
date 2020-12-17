@@ -12,6 +12,6 @@ curl -XPOST 'localhost:8086/api/v2/query?db=Fd&epoch=ns' -sS -H 'Accept:applicat
 
   #./csv2json fd.csv fd.json prefix.json suffix.json
 
-  from(bucket: "telegraf/autogen")
-  |> range(start: dashboardTime)
-  |> filter(fn: (r) => r._measurement == "mustlink" and r.name == "ASA1321L" and r._field == "value")
+#  from(bucket: "telegraf/autogen")
+#  |> range(start: dashboardTime)
+#  |> filter(fn: (r) => r._measurement == "mustlink" and r.name == "ASA1321L" and r._field == "value")

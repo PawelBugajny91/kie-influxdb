@@ -8,7 +8,7 @@
 echo "Go Alert"
 ./getDataKie.sh Cep_1
 echo "Get data kie done"
-if $(stat -c%s main.sh)>150 ; then
+if $(stat -c%s Events.json)>150 ; then
 ./jsonToCsv.out Events.json AlertEvent.csv AlertEvent
 fi
 echo "Alert Done"

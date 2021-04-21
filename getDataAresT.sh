@@ -1,5 +1,6 @@
 #! /bin/bash
-#getDataAres.sh parameterNameFromInfluxDB(and file_out) date
+#getDataAresT.sh parameterNameFromInfluxDB(and file_out) date
+
 query='from(bucket: "SimulatedAresData/autogen")
   |> range('"$2 $3 $4 $5"')
   |> filter(fn: (r) => r._measurement == "mustlink" and (r._field == "value"))'

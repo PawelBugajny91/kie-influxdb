@@ -1,22 +1,3 @@
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100 98928    0 98854  100    74  19.0M  14982 --:--:-- --:--:-- --:--:-- 23.5M
-{
-  "type" : "SUCCESS",
-  "msg" : "Container Cep_1_1.0.0-SNAPSHOT successfully called.",
-  "result" : {
-    "execution-results" : {
-      "results" : [ ],
-      "facts" : [ ]
-    }
-  }
-}{
-  "type" : "SUCCESS",
-  "msg" : "Container Cep_1_1.0.0-SNAPSHOT successfully called.",
-  "result" : {
-    "execution-results" : {
-      "results" : [ ],
-      "facts" : [ ]
-    }
-  }
-}
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100  374k    0  374k  100    74  26.8M   5437 --:--:-- --:--:-- --:--:-- 28.1M

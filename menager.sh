@@ -1,5 +1,5 @@
 #! /bin/bash
-time="start: 2020-06-01T00:00:00Z, stop: 2020-11-27T12:00:00Z"
+time="start: 2019-01-01T00:00:00Z, stop: 2020-02-01T12:00:00Z"
 if [ "$1" = "ares" -o "$1" = "Ares" ] ; then
 ./getDataAres.sh $2 $time
 elif [ "$1" = "fd" -o "$1" = "Fd" ] ; then

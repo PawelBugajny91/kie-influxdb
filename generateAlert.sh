@@ -4,13 +4,13 @@
 #./GoEvents.sh FDEvent
 
 #./menager.sh ares ASA1321L BlindingEvent
-./GoEvents.sh BlindingEvent
+./GoEvents.sh BlindingEvent 
 echo "Go Alert"
 ./getDataKie.sh Cep_1
 echo "Get data kie done"
-if $(stat -c%s Events.json)>150 ; then
+#if $(stat -c%s Events.json)>150 ; then
 ./jsonToCsv.out Events.json AlertEvent.csv AlertEvent
-fi
+#fi
 echo "Alert Done"
 ./writeData.sh AlertEvent AlertEvent
 echo "Alert saved"
